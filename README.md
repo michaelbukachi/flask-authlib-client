@@ -1,7 +1,8 @@
 # Flask-Authlib-Client
 
 Flask-Authlib-Client is a Flask extension that adds support for separate authorization/resource servers. It extends
-authlib's flask integration.
+authlib's flask integration. This extension is heavily inspired by 
+[django-oauth-toolkit](https://django-oauth-toolkit.readthedocs.io/en/latest/)
 
 ### Install
 

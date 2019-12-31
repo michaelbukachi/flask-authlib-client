@@ -5,7 +5,7 @@ from flask_authlib_client.extras import RemoteToken, RemoteTokenValidator
 
 class AuthClient(object):
 
-    def __init__(self, app=None, oauth=None, token_class=None):
+    def __init__(self, app=None, oauth=None, token_class=RemoteToken):
         """
         Constructor for flask_authlib_client.AuthClient
 
@@ -16,7 +16,7 @@ class AuthClient(object):
         if app is not None:
             self.init_app(app, oauth, token_class)
 
-    def init_app(self, app, oauth, token_class=RemoteToken):
+    def init_app(self, app, oauth, token_class):
         """
         Configure AuthClient for Flask application
 

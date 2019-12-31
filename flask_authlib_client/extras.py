@@ -47,4 +47,4 @@ class RemoteToken(TokenMixin):
         return expires_at
 
     def is_revoked(self):
-        return self.token.get('active', False)
+        return not self.token.get('active', False)

@@ -2,4 +2,5 @@ Authlib>=0.13
 requests>=2.22.0
 pytest>=4.3.0
 pytest-cov>=2.6.1
+requests-mock>=1.7.0
 tox>=3.7.0

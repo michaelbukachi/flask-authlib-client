@@ -14,3 +14,13 @@ notifications:
   email: false
   webhooks: https://www.travisbuddy.com/
   on_success: never
+deploy:
+  provider: pypi
+  skip_existing: true
+  user: michaelbukachi
+  on:
+    tags: true
+    distributions: sdist bdist_wheel
+    repo: michaelbukachi/flask-authlib-client
+  password:
+    secure: HlOmFav1VF8pZrF1TaXM1JBCGPhonhVJYXrWTwnNtM2AY/fV7mY2taN5chGduW3nYVHEwYn8JSHwUyd59DsKnoiCTMt7zj7zjRpHO+DvJWE2u5QgaWUYagAoEvzc2Wz60pl4iK80uu2Jd/t7UhAR5XKY3fKU4EKVNnNl6eiW1D5tECydTQtZeDA4YSEQDCmSAi+nz9gyCnYKESYOKIzRNeghdAjSlAsEhCS93vNd4XOh9rSdbYNaDIwe0ziATMJmiOxB81po+wDPwi2uE/jXCd64q8cTmIbhsXeQxHuwQuQzbrUzocZY/+GBpkhiPwlACkNfnXB0VtRFn+Gz8jBjjHMNwhv1Q5/xPrLct2F6Ff5dWnM65LITU0Ag3Bs0X7ftxSDKTuVWilsJ4ChrInjUTi9VxKfgsjtsTn9Zyz4vGEwEZZF+GmVlup9mjPrPGsNyDb71LtHC4j+veALVfIEZKN/biVFeBmfc2LmGQfHYAdMlH9RdczG06Jfu5tnjPu0dOA1mbIwjYH3cITpFcLG+vogER4Crt1RZLpWQSfq+KTU16fpQ5ktXWgmoXOY4Eqz4OMAdUxZbiKCXfmFwDDiBlRN7eKWXnqAP0fSRRKV8a1SSMXeN/bIpAo6JYGBK7pnZQngnqWA1DBp+znasDWO/t+XYsEZdhmpH7OYByU82JC8=

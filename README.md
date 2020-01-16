@@ -1,6 +1,6 @@
 # Flask-Authlib-Client
 
-[![Build Status](https://travis-ci.com/michaelbukachi/flask-authlib-client.svg?branch=master)](https://travis-ci.com/michaelbukachi/flask-authlib-client)
+[![Build Status](https://travis-ci.org/michaelbukachi/flask-authlib-client.svg?branch=master)](https://travis-ci.org/michaelbukachi/flask-authlib-client)
 
 
 Flask-Authlib-Client is a Flask extension that adds support for separate authorization/resource servers. It extends

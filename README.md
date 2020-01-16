@@ -10,8 +10,7 @@ authlib's flask integration. This extension is heavily inspired by
 ### Install
 
 ```bash
-# Temporary. Account issues
-$ pip install git+git://github.com/michaelbukachi/flask-authlib-client.git#egg=flask-authlib-client
+$ pip install Flask-Authlib-Client
 ```
 
 ### Usage

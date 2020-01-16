@@ -8,6 +8,9 @@ from setuptools import setup
 
 version = "0.0.1"
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 setup(
     name='Flask-Authlib-Client',
     version=version,
@@ -16,7 +19,8 @@ setup(
     author='Michael Bukachi',
     author_email='michaelbukachi@gmail.com',
     description='An extension to add support for separate resource server authentication to authlib',
-    long_description=__doc__,
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     packages=['flask_authlib_client'],
     platforms='any',
     install_requires=['Flask', 'Authlib'],
